@@ -1,13 +1,13 @@
 # web_vulnerablity_Scanning_using_nikto
-Scan Both Public and local Server for misconfigurations, sensetive files, outdated softwares and other bigs.
+Scan Both Public and local Server for misconfigurations, sensetive files, outdated softwares and other bugs.
 
-##What is Nikto?
+##What is Nikto?##
 A powerful and fast web server Scanner use for Vulnerablity assessment.
 
-##Why Nikto?
+##Why Nikto?##
 Nikto is widely used by ethical hackers, penetration testers, and cybersecurity professionals to identify potential security risks quickly and effectively. It helps ensure that web applications are safe, secure, and resistant to attacks.
 
-##Requirements :-
+##Requirements :-##
 1. Kali linux
 2. Nikto - at least version 2.5
 3.python3
