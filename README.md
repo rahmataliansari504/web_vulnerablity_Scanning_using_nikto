@@ -11,7 +11,7 @@ Nikto is widely used by ethical hackers, penetration testers, and cybersecurity 
 1. Kali linux
 2. Nikto - at least version 2.5
 3. Python3 - used as a HTTP server for local testing
-4. Public Target - (http://testphp.vulnhub.com)
+4. Public Target - (http://testphp.vulnweb.com)
 
 ### Check Kali linux
 ```cat /etc/os-release```
@@ -70,7 +70,7 @@ and start scanning
 
 After scanning we will work on those four points. Which of these four pieces of information are we getting out of it.
 
-## Outpur Analysis
+## Output Analysis
 1. server : simple HTTP/0.6 python/3.13.7
 2. wp-cs-dump - this a folder that is visible that should not be visible.
    there are two cv values CVE-1999-0269. The vulnerability says is that if a folder is revealed , it could be dangerous. Which should not      be allowed. So this has been revealed here.
