@@ -1,29 +1,29 @@
 # web_vulnerablity_Scanning_using_nikto
 Scan Both Public and local Server for misconfigurations, sensetive files, outdated softwares and other bugs.
 
-##What is Nikto?##
+## What is Nikto?
 A powerful and fast web server Scanner use for Vulnerablity assessment.
 
-##Why Nikto?##
+## Why Nikto?
 Nikto is widely used by ethical hackers, penetration testers, and cybersecurity professionals to identify potential security risks quickly and effectively. It helps ensure that web applications are safe, secure, and resistant to attacks.
 
-##Requirements :-##
+## Requirements :-
 1. Kali linux
 2. Nikto - at least version 2.5
 3.python3
    used as a http server for local test
 4.Public target : (http://testphp.vulnweb.com)
 
-###Check Kali linux
+### Check Kali linux
 ```cat /etc/os-release```
 
-###Install Nikto
+### Install Nikto
 ```sudo apt install nikto```
 
-###Install Python
+### Install Python
 ```sudo apt install python3```
 
-##Execution of the Project
+## Execution of the Project
 first command you will run is 
 ```nikto -h```
 you can see there are a lot of help command in it. But the one that is going to be most usefull to you ammong these is 
@@ -31,12 +31,12 @@ you can see there are a lot of help command in it. But the one that is going to 
 this command, what do you get in target in this host?
 Either you will get the host or the URL.
 
-##Scanning Public Server
+## Scanning Public Server
 We are going to run nikto on a public test target.
 ```nikto -h http://testphp.vulnweb.com```
 press enter and we started scanning on it.
 
-##Output Analysis
+## Output Analysis
 You need to pay attention in the four output points.
 1. Missing anti-clickjacking Headers
 2. Exposer of web server type and version
@@ -51,14 +51,14 @@ My Output -
 But now we have not recieved any such folder or file has been released.
 so, In this we got three vulnerablity only.
 
-##Scanning Local Server
+## Scanning Local Server
 In this we have use python3. So, we are going to do server local testing with python3.
 
-###Check your IP address
+### Check your IP address
 ```ifconfig```
 On this i can run a web server through python
 
-###Type command to host any folder
+### Type command to host any folder
 ```python3 -m http.server<port_no>```
 After type thi command whatever is in this directory will be hosted on port <port_no>.
 meaning if i go to the browser and type <ip> and give the port <port_no>.
@@ -71,7 +71,7 @@ and start scanning
 
 After scanning we will work on those four points. Which of these four pieces of information are we getting out of it.
 
-##outpur Analysis
+## outpur Analysis
 1. server : simple HTTP/0.6 python/3.13.7
 2. wp-cs-dump - this a folder that is visible that should not be visible.
    there are two cv values CVE-1999-0269. The vulnerability says is that if a folder is revealed , it could be dangerous. Which should not      be allowed. So this has been revealed here.
