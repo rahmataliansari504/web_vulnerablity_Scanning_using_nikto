@@ -10,9 +10,8 @@ Nikto is widely used by ethical hackers, penetration testers, and cybersecurity 
 ## Requirements :-
 1. Kali linux
 2. Nikto - at least version 2.5
-3.python3
-   used as a http server for local test
-4.Public target : (http://testphp.vulnweb.com)
+3. Python3 - used as a HTTP server for local testing
+4. Public Target - (http://testphp.vulnweb.com)
 
 ### Check Kali linux
 ```cat /etc/os-release```
